@@ -48,7 +48,7 @@
   },
   "dependencies": {
     "@dazn/lambda-powertools-logger": "^1.28.1",
-    "@middy/core": "^6.1.6"
+    "@middy/core": "^6.4.1"
   },
   "lint-staged": {
     "*.{js, mjs}": "eslint --cache --fix",
