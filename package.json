@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/sls-reference-architectures/javascript-template#readme",
   "devDependencies": {
-    "@aws-sdk/client-cloudformation": "^3.799.0",
+    "@aws-sdk/client-cloudformation": "^3.954.0",
     "@eslint/eslintrc": "^3.3.1",
     "@eslint/js": "^9.25.1",
     "@swc/core": "^1.11.21",
@@ -48,7 +48,7 @@
   },
   "dependencies": {
     "@dazn/lambda-powertools-logger": "^1.28.1",
-    "@middy/core": "^6.1.6"
+    "@middy/core": "^6.4.5"
   },
   "lint-staged": {
     "*.{js, mjs}": "eslint --cache --fix",
