@@ -33,10 +33,10 @@ jobs:
         with:
           aws-region: us-east-1
           role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME }}
-      - name: Run INT tests
-        run: npm run test:int
       - name: Deploy
         run: npm run deploy
+      - name: Run INT tests
+        run: npm run test:int
       - name: Run E2E tests
         run: npm run test:e2e
         # The following is for my reference architecture stack only
