@@ -5,6 +5,8 @@ licenseKey: ${ssm:/aws/reference/secretsmanager/serverless-framework-access-key}
 provider:
   deploymentBucket:
     name: com.reference-architecture.deploys
+  environment:
+    POWERTOOLS_LOGGER_SAMPLE_RATE: 1
   logRetentionInDays: 7
   name: aws
   runtime: nodejs22.x
