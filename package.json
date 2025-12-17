@@ -11,7 +11,7 @@
     "test": "npm run lint && npm run test:unit",
     "test:e2e": "STAGE=dev npx jest e2e.test --config jest.config.e2e.js",
     "test:int": "STAGE=dev npx jest int.test --config jest.config.int.js",
-    "test:unit": "npx jest unit.test",
+    "test:unit": "POWERTOOLS_DEV=true POWERTOOLS_LOGGER_SAMPLE_RATE=1 npx jest unit.test",
     "prepare": "husky"
   },
   "repository": {
@@ -47,7 +47,7 @@
     "serverless-deployment-bucket": "^1.6.0"
   },
   "dependencies": {
-    "@dazn/lambda-powertools-logger": "^1.28.1",
+    "@aws-lambda-powertools/logger": "^2.30.0",
     "@middy/core": "^6.4.5"
   },
   "lint-staged": {

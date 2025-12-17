@@ -1,8 +1,10 @@
-import Logger from '@dazn/lambda-powertools-logger';
+import { Logger } from '@aws-lambda-powertools/logger';
+
+const logger = new Logger({ serviceName: 'javascript-template-sls' });
 
 describe('Aristotle says', () => {
   it('A is A', () => {
-    Logger.debug('import is working in jest test');
+    logger.debug('import is working in jest test');
     expect('A').toBe('A');
   });
 });

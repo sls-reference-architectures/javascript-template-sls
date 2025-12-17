@@ -1,8 +1,10 @@
 import middy from '@middy/core';
-import Logger from '@dazn/lambda-powertools-logger';
+import { Logger } from '@aws-lambda-powertools/logger';
+
+const logger = new Logger({ serviceName: 'javascript-template-sls' });
 
 const hello = async (event) => {
-  Logger.debug('In handler hello()');
+  logger.debug('In handler hello()');
 
   return { message: 'Hello from your JS template!', event };
 };
