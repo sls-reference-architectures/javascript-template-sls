@@ -4,7 +4,7 @@ const region = process.env.AWS_REGION || 'us-east-1';
 const stage = process.env.STAGE || 'dev';
 
 const setup = async () => {
-  const stackName = `javascript-template-${stage}`;
+  const stackName = `javascript-template-sls-${stage}`;
   const stack = await getStack(stackName);
 
   process.env.API_URL = getApiUrl(stack);
