@@ -1,6 +1,6 @@
 # javascript-template
 
-Template for basic JavaScript serverless project
+Template for basic JavaScript serverless project using Serverless Framework
 
 Includes:
 

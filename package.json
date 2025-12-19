@@ -1,7 +1,7 @@
 {
   "name": "javascript-template",
   "version": "1.0.0",
-  "description": "Template for basic JavaScript serverless project",
+  "description": "Template for basic JavaScript serverless project in Serverless Framework",
   "main": "index.js",
   "scripts": {
     "deploy": "npx sls deploy --conceal",

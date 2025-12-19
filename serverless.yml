@@ -1,4 +1,4 @@
-service: javascript-template
+service: javascript-template-sls
 
 licenseKey: ${ssm:/aws/reference/secretsmanager/serverless-framework-access-key}
 
