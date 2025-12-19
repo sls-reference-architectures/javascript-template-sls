@@ -23,8 +23,6 @@ build:
   esbuild:
     bundle: true
     minify: true
-    exclude:
-      - '@aws-sdk/*'
 
 plugins:
   - serverless-deployment-bucket
