@@ -9,11 +9,11 @@ provider:
     POWERTOOLS_LOGGER_SAMPLE_RATE: 1
   logRetentionInDays: 7
   name: aws
-  runtime: nodejs24.x
+  runtime: nodejs22.x
 
 functions:
   hello:
-    handler: src/helloWorld.wat
+    handler: src/helloWorld.default
     events:
       - httpApi:
           method: get
