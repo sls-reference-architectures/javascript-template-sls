@@ -8,5 +8,6 @@ const hello = async (event) => {
 
   return { message: 'Hello from your JS template!', event };
 };
+const wat = middy(hello);
 
-export default middy(hello);
+export { wat };
