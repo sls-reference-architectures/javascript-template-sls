@@ -23,6 +23,7 @@ build:
   esbuild:
     bundle: true
     minify: true
+    sourcemap: false
 
 plugins:
   - serverless-deployment-bucket
