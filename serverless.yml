@@ -13,7 +13,7 @@ provider:
 
 functions:
   hello:
-    handler: src/helloWorld
+    handler: src/helloWorld.handler
     events:
       - httpApi:
           method: get
