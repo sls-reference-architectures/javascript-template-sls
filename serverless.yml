@@ -19,10 +19,10 @@ functions:
           method: get
           path: /hello
 
-# build:
-#   esbuild:
-#     bundle: true
-#     minify: true
+build:
+  esbuild:
+    bundle: true
+    minify: true
 
 plugins:
   - serverless-deployment-bucket
