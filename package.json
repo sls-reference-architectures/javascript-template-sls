@@ -30,7 +30,7 @@
     "@eslint/js": "^9.39.2",
     "@swc/core": "^1.15.11",
     "@swc/jest": "^0.2.39",
-    "axios": "^1.13.2",
+    "axios": "^1.15.0",
     "esbuild": "^0.27.2",
     "eslint": "^9.39.2",
     "eslint-config-prettier": "^10.1.8",
