@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "deploy": "npx sls deploy --conceal",
+    "teardown": "npx sls remove --conceal",
     "lint": "eslint .",
     "lint:fix": "eslint '**.*.js' --fix",
     "prettier": "npx prettier --write .",

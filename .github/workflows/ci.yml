@@ -39,6 +39,5 @@ jobs:
         run: npm run test:int
       - name: Run E2E tests
         run: npm run test:e2e
-        # The following is for my reference architecture stack only
-      # - name: Remove stack from AWS
-      #   run: npx sls remove
+      - name: Tear down stack
+        run: npm run teardown
