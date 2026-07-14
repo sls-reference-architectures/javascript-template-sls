@@ -35,9 +35,8 @@ This is a **Serverless Framework** project targeting AWS Lambda (Node.js 24.x). 
 
 **CI pipeline** (`.github/workflows/`): On push to `master`, the workflow deploys then runs int and e2e tests against the live stack. On PRs, only `npm test` (lint + unit) runs — and only for dependabot PRs.
 
-**ESLint config** (`eslint.config.mjs`): Flat config (ESLint v9). Key rules: `max-params: warn 1`, `no-param-reassign: error`. The `no-only-tests` plugin prevents accidentally committing `test.only`.
+**ESLint config** (`eslint.config.mjs`): Flat config (ESLint v10). Key rules: `max-params: warn 1`, `no-param-reassign: error`. The `no-only-tests` plugin prevents accidentally committing `test.only`.
 
 ## Known constraints
 
-- `eslint-plugin-import` does not yet support ESLint v10 — PRs bumping eslint/`@eslint/js` to v10 are intentionally held closed until that plugin adds support.
 - The Serverless Framework license key is pulled from AWS Secrets Manager via SSM (`/aws/reference/secretsmanager/serverless-framework-access-key`).
