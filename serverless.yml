@@ -3,6 +3,7 @@ service: javascript-template-sls
 licenseKey: ${ssm:/aws/reference/secretsmanager/serverless-framework-access-key}
 
 provider:
+  architecture: arm64
   deploymentBucket:
     name: com.reference-architecture.deploys
   environment:
