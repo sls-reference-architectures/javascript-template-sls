@@ -11,8 +11,6 @@ provider:
   logRetentionInDays: 7
   name: aws
   runtime: nodejs24.x
-  tags:
-    lumigo:auto-trace: 'true'
 
 functions:
   hello:
