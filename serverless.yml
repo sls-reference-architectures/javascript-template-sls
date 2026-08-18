@@ -19,6 +19,8 @@ functions:
       - httpApi:
           method: get
           path: /hello
+          authorizer:
+            type: aws_iam
 
 build:
   esbuild:
