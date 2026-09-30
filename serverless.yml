@@ -28,8 +28,5 @@ build:
     minify: true
     sourcemap: false
 
-plugins:
-  - serverless-deployment-bucket
-
 package:
   individually: true
